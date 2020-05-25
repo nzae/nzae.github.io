@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* body */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+/* logo */
+
+.logo {
+    width: 40%;
+    float: left;
+}
+
+.logo h1 {    
+    padding-left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo h1:hover{
+    transition: 0.5s;
+    color: skyblue;
+}
+/* nav */
+
+nav ul {
+    width: 60%;
+    float: right;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 30px;
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    border-bottom: 5px solid white;
+    color: skyblue;
+}
+
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+  /*   background-image: url(../media/cover.jpg); */
+    background-size: cover;
+    border-bottom: 5px solid gainsboro;
+}
+
+.banner-content {
+    color: #fff;
+    width: 60%;
+    padding: 25% 150px;
+}
+
+
+/* This transform property lets us focus on a specific part of the video for the banner, in tandem with object cover property */
+.banner video{
+    transform: translate(-25%, -25%);        
+    object-fit: cover;
+}
+
+/* video background */
+.banner-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* overflow */
+    overflow: hidden;
+    /* z-index moves things in front or behind header banner etc stack order of element positive in front, negative is behind */
+    z-index: -1;
+}
+
+/* css3 - pseudo elements - :before, :after */
+
+/*  Imagine I want to put something before the nav a */
+
+/* nav a::before{
+    content: ':)';
+} */
+
+
+/* Would make a transparent background on top video. Right now it makes a transparent mask on the video, so text can stand out on the page */
+.banner-video::after{
+    content: ''; /* No actual content here, just to make a transparent mask */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Notice this z-index is 1 as compared to z-index -1 of actual banner image video */
+}
+
+/* button */
+
+.btn {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 150px;
+    margin: 40px 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: white;
+    padding: 10px;
+    text-decoration: none;
+    color: skyblue;
+    display: block;
+    width: 150px;
+    margin: 40px 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn1 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 150px;
+    margin: 40px 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn1:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+    background: black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 150px;
+    margin: 40px 0;
+    text-align: center;
+    transition: 0.5s;
+}
+/* main */
+
+main {
+    width: 60%;
+    margin: 40px auto;
+}
+
+main .btn {
+    border: 2px solid black;
+    color: black;
+}
+
+.sideleft {
+    width: 50%;
+    float: left;
+}
+
+
+/* 2 columns */
+
+.sideright {
+    width: 40%;
+    float: right;
+}
+
+.sideright img {
+    padding-top: 40px;
+    width: 100%;
+}
+
+/* clearfix */
+
+.clearfix {
+    clear: both;
+}
+
+/* footer */
+
+footer {
+    border-top: 5px solid gainsboro;
+    padding: 40px;
+    background-color: grey;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* social */
+
+.social a {
+    margin: 0 5px;
+}
+
+.social img {
+    width: 30px;
+}
+
+/* Table Styling */
+
+table, td, th{
+    border: 1px solid rgb(207, 207, 207);
+    border-collapse: collapse;
+
+}
+table{
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+    background-color: white;
+    box-shadow: 0, 10px, 60px rgba(0,0,0,0.5);
+/* box shadow: 0, 10px, blur raidus, rgba shadow */
+}
+th, td{
+    padding: none;
+    text-align: center;
+    transition: .3s;
+
+}
+
+table p{
+    font-size: 0.5em;
+}
+
+/* td.active, td:hover{
+    background-color: #05a081;
+    color: white;
+    cursor: pointer; 
+} */
+
+
+
+
+/* Tooltips */
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-table;
+    box-sizing: initial;
+}
+
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext {
+    text-align: center;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip img{
+    width: 100%;
+    height: 100%;
+    margin: none;
+}
+
+
+/* Tier page specific */
+
+.tierlist-ul{
+    list-style: none;
+    font-size: 20px;
+    padding-left: 0;
+}
+.tierlist-ul li{
+    padding: 5px;
+}
+
+.tierlabel{
+    font-size: 1em;
+    font-weight: bold;
+}
+.tierdesc{
+    font-size: 0.75em;
+}
+
+div.tooltip img{
+    height: 75px;
+    width: 75px;
+}
