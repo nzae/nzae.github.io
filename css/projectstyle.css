@@ -342,6 +342,23 @@ table p{
     
 }
 
+
+
+
+
+
+/* Image Size within Tierlist Table - Must do since we added tooltips */
+
+
+div.tooltip img{
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+
 .tablediv{
     /* transform: scale(0.8,0.8); */
 }
@@ -428,8 +445,6 @@ table p{
     font-size: 0.75em;
 }
 
-/* Image Size within Tierlist Table - Must do since we added tooltips */
-div.tooltip img{
-    height: 80px;
-    width: 80px;
-}
+
+
+
