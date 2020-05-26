@@ -390,10 +390,6 @@ table p{
 }
 
 div.tooltip img{
-    height: 70px;
-    width: 70px;
-}
-
-#lily{
-    border: 10px solid gainsboro;
+    height: 63px;
+    width: 63px;
 }
