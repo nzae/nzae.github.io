@@ -13,6 +13,12 @@ body {
     font-size: 20px;
 }
 
+/* #wrapper{
+    width: 80%;
+    margin: auto auto;
+}
+ */
+
 /* header */
 
 header {
@@ -191,10 +197,19 @@ nav ul li a:hover{
     text-align: center;
     transition: 0.5s;
 }
+
+
+
+
+
+
+
+
+
 /* main */
 
 main {
-    width: 60%;
+    width: 80%;
     margin: 40px auto;
 }
 
@@ -202,6 +217,11 @@ main .btn {
     border: 2px solid black;
     color: black;
 }
+
+
+
+
+
 
 
 /* 1 Column */
@@ -388,6 +408,6 @@ table p{
 
 /* Image Size within Tierlist Table - Must do since we added tooltips */
 div.tooltip img{
-    height: 63px;
-    width: 63px;
+    height: 72px;
+    width: 72px;
 }
