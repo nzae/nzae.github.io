@@ -325,6 +325,9 @@ td div img{
 display: inline;
 }
 
+table h4{
+    font-size: 1.25em;
+}
 table p{
     font-size: 0.5em;
 }
