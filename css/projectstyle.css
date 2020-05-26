@@ -29,7 +29,7 @@ header {
 }
 
 .logo h1 {    
-    padding-left: 20px;
+    padding: 5px 20px;
     font-size: 40px;
     font-weight: bold;
     color: #fff;
