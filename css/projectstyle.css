@@ -52,16 +52,33 @@ nav ul li {
 }
 
 nav ul li a {
+    font-weight: bold;
+
+    padding: 15px 30px;
     font-size: 30px;
     display: block;
-    padding: 15px 30px;
+
     text-decoration: none;
     color: #fff;
+
+    /* Required So Nav Bar does not look like it "moves" */
+    border-top: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+
 }
 
 nav ul li a:hover{
+    font-weight: bold;
+
+    padding: 15px 30px;
+    font-size: 30px;
+    display: block;
+
+    /* Changes With Hover effect */
+    border-top: 5px solid white;
     border-bottom: 5px solid white;
     color: skyblue;
+    transition: 0.5s;
 }
 
 /* banner */
