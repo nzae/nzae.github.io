@@ -274,7 +274,7 @@ table, td, th{
 table{
     margin-right: auto;
     margin-left: auto;
-    vertical-align: middle;
+    vertical-align: right;
     background-color: white;
     box-shadow: 0, 10px, 60px rgba(0,0,0,0.5);
 /* box shadow: 0, 10px, blur raidus, rgba shadow */
@@ -286,6 +286,10 @@ th, td{
 
 }
 
+td div img{
+display: inline;
+}
+
 table p{
     font-size: 0.5em;
 }
@@ -295,8 +299,6 @@ table p{
     color: white;
     cursor: pointer; 
 } */
-
-
 
 
 /* Tooltips */
@@ -352,7 +354,7 @@ table p{
 
 
 
-  /* Show the tooltip text when you mouse over the tooltip container */
+/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
@@ -361,7 +363,6 @@ table p{
     visibility: visible;
     text-align: center;
 }
-
 
 .tooltip img{
     width: 100%;
