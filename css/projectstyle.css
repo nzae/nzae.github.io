@@ -211,6 +211,7 @@ nav ul li a:hover{
 main {
     width: 80%;
     margin: 40px auto;
+    /* transform: scale(0.8,0.8); */
 }
 
 main .btn {
@@ -218,6 +219,26 @@ main .btn {
     color: black;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.soon{
+    font-weight: bold;
+}
+
+.note{
+    font-weight: bolder;
+}
 
 
 /* 2 columns */
@@ -318,7 +339,17 @@ display: inline;
 
 table p{
     font-size: 0.5em;
+    
 }
+
+.tablediv{
+    /* transform: scale(0.8,0.8); */
+}
+
+/* .General-Hero-Desc{
+    margin: 40px auto;
+    width: 60%;
+} */
 
 /* td.active, td:hover{
     background-color: #05a081;
@@ -363,6 +394,7 @@ table p{
     visibility: visible;
 }
 
+
 /* Creates the arrow on tooltip */
 
 .tooltip .tooltiptext::after {
@@ -377,6 +409,7 @@ table p{
 }
 
 /* Tier page specific */
+
 
 .tierlist-ul{
     list-style: none;
@@ -397,6 +430,6 @@ table p{
 
 /* Image Size within Tierlist Table - Must do since we added tooltips */
 div.tooltip img{
-    height: 72px;
-    width: 72px;
+    height: 80px;
+    width: 80px;
 }
