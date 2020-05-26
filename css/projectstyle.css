@@ -220,15 +220,6 @@ main .btn {
 
 
 
-
-
-/* 1 Column */
-
-.one-column{
-    margin: auto auto;
-}
-
-
 /* 2 columns */
 
 .sideleft {
@@ -264,7 +255,7 @@ iframe{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    padding: 40px;
+    padding-bottom: 40px; /* Change this accordingly when more content is added */
     padding-left: 50px;
     width: 100%;
 }
