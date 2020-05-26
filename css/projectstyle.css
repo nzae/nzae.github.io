@@ -13,6 +13,11 @@ body {
     font-size: 20px;
 }
 
+#main-wrapper{
+    margin: 40px auto;
+    width: 80%;
+}
+
 /* header */
 
 header {
@@ -22,7 +27,7 @@ header {
     
 }
 
-/* logo */
+/* Site Logo  */
 
 .logo {
     width: 40%;
@@ -39,9 +44,9 @@ header {
 .logo h1:hover{
     transition: 0.5s;
     color: rgb(180, 234, 255);
-    cursor: pointer;
+    cursor: context-menu;
 }
-/* nav */
+/* Nav bar*/
 
 nav ul {
     
@@ -84,7 +89,7 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
-/* banner */
+/* Banner (component of header, the main video image */
 
 .banner {
     width: 100%;
@@ -98,6 +103,11 @@ nav ul li a:hover{
     color: #fff;
     width: 60%;
     padding: 25% 150px;
+}
+
+.banner-content h1:hover{
+    color: rgb(180, 234, 255);
+    cursor: context-menu;
 }
 
 
@@ -129,7 +139,9 @@ nav ul li a:hover{
 } */
 
 
-/* Would make a transparent background on top video. Right now it makes a transparent mask on the video, so text can stand out on the page */
+/* If content was filled =>
+Would make a transparent background on top video. 
+Right now it makes a transparent mask on the video, so text can stand out on the page */
 .banner-video::after{
     content: ''; /* No actual content here, just to make a transparent mask */
     position: absolute;
@@ -137,12 +149,14 @@ nav ul li a:hover{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1; /* Notice this z-index is 1 as compared to z-index -1 of actual banner image video */
 }
 
-/* button */
+/* Button Formatting for all buttons on page */
 
+
+/* Button on banner */
 .btn {
     border: 2px solid #fff;
     border-radius: 20px;
@@ -169,6 +183,7 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
+/* Buttons within main */
 .btn1 {
     border: 2px solid black;
     border-radius: 20px;
@@ -201,13 +216,11 @@ nav ul li a:hover{
 
 
 
-
-
-/* main */
+/* Main formatting */
 
 main {
-    width: 80%;
-    margin: 40px auto;
+/*     width: 80%;
+    margin: 40px auto; */
     /* transform: scale(0.8,0.8); */
 }
 
@@ -215,23 +228,6 @@ main .btn {
     border: 2px solid black;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-.soon{
-    font-weight: bold;
-}
-
-.note{
-    font-weight: bolder;
-}
-
 
 /* 2 columns */
 
@@ -334,20 +330,13 @@ table p{
 }
 
 
-
-
-
-
-/* Image Size within Tierlist Table - Must do since we added tooltips */
-
-
+/* Image Size within Tier List Table - Must do since we added tooltips */
 div.tooltip img{
     height: 80px;
     width: 80px;
 }
 
-
-/* Wrappers for text above and below tierlist table */
+/* Wrappers for text above and below Tier List table */
 #tier-wrapper1{
     width: 80%;
     margin: auto auto;
@@ -357,18 +346,11 @@ div.tooltip img{
     margin: auto auto;
 }
 
-
-
 .tablediv{
     transform: scale(0.8,0.8);
     margin: none;
     padding: none;
 }
-
-/* .General-Hero-Desc{
-    margin: 40px auto;
-    width: 60%;
-} */
 
 /* td.active, td:hover{
     background-color: #05a081;
@@ -377,7 +359,7 @@ div.tooltip img{
 } */
 
 
-/* Tooltips */
+/* Tooltips For the Tier List Table - In progress: Some for other site elements .tooltiptext is for tier table only */
 
 /* Tooltip container */
 .tooltip {
@@ -386,7 +368,7 @@ div.tooltip img{
     box-sizing: initial;
 }
 
-  /* Tooltip text */
+/* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: auto;
@@ -427,8 +409,7 @@ div.tooltip img{
     border-color: black transparent transparent transparent;
 }
 
-/* Tier page specific */
-
+/* Tier List page Specific */
 
 .tierlist-ul{
     list-style: none;
@@ -446,6 +427,16 @@ div.tooltip img{
 .tierdesc{
     font-size: 0.75em;
 }
+
+/* Only for specific bolds, should probably reformat this */
+.soon{
+    font-weight: bold;
+}
+
+.note{
+    font-weight: bolder;
+}
+
 
 
 
