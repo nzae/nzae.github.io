@@ -318,7 +318,6 @@ table, td, th{
 table{
     margin-right: auto;
     margin-left: auto;
-    vertical-align: right;
     background-color: white;
     box-shadow: 0, 10px, 60px rgba(0,0,0,0.5);
 /* box shadow: 0, 10px, blur raidus, rgba shadow */
@@ -327,7 +326,6 @@ th, td{
     padding: none;
     text-align: center;
     transition: .3s;
-
 }
 
 td div img{
@@ -365,11 +363,11 @@ div.tooltip img{
 }
 
 /* td.active, td:hover{
-    background-color: #05a081;
+    background-color: grey;
     color: white;
     cursor: pointer; 
-} */
-
+}
+ */
 
 /* Tooltips For the Tier List Table - In progress: Some for other site elements .tooltiptext is for tier table only */
 
