@@ -9,10 +9,18 @@
 
 
 <style>
+
     *{
         box-sizing: border-box;
     }
-    table{
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 10px;
+}
+    table{ 
         border: collapse;
         text-align: center;
         table-layout: auto;
@@ -21,33 +29,52 @@
         font-size: 1em;
     }
     table ul li{
+        list-style-type: circle;
+        padding: 5px 0;
         text-align: left;
     }
     table th{
         padding: 20px 10px;
-    }
-    td.expand{
     }
     span.bold{
         font-size: 40px;
         font-weight: bold;
         color: red;
     }
-    .char-title-header{
-        text-align: center;
+    span.bold-1{
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
     }
+
     .c-image-portrait img{
         display: block;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 50%;
+        max-width: 90%;
     }
-    .siderightT{
+
+    .background-bar{
+        bottom: -25px;
+        position: relative;
+
+        color: black;
+        text-align: left;
+        background-image: radial-gradient(#ffffff, #d6d6d6);
+    }
+
+
+
+
+
+
+    .sideright-1{
         width: 50%;
         float: right;
     }
-    .sideleftT{
-        width: 20%;
+    .sideleft-1{
+        width: 40%;
         float: left;
     }
     .clearfix{
@@ -84,18 +111,23 @@
 
 
 
-    <div class="main-wrapper">
+    <!-- <div class="main-wrapper"> -->
+
         <main>
-            <div>
+            
+            
                 <div class="char-title-header">
                 <h1>Lily (Descent of Heroes)</h1>
                 <h2>Evaluation and Build Guide</h2>
                 </div>
+                <div class="sideleft-1">
                 <div class="c-image-portrait">
                     <img src="/images/CharacterProfileL/Lily.png" alt="">
                 </div>
             </div> <!-- sideright ends -->
 
+
+            <div class="sideright-1">
                 <table>
                     <tbody>
                     <h2 class="background-bar">Lily Summary</h2>
@@ -130,19 +162,34 @@
                         </th>
                         <td colspan="3">
                             <ul id="text-fix">
-                                <li>More dps potential than any other mage due to her first trait alone (Phantasmal Magic) leading to 1.2x the damage on any spell.</li>
+                                <li> <span class="bold-1">Strongest magic dps</span> in the game currently.</li>
+                                <li>Her first trait, Phantasmal Magic leads to <span class="bold-1"> 1.2x the damage</span> on any spell.</li>
                                 <li>Light and Dark specialization means she is not locked to a single element as are most traditional casters.</li>
                                 <li>Massive amount of SC saves in her Skill Tree, has nearly everything a caster would want, leaving lots of room to slot auxiliary talents.</li>
+                                
                             </ul>
                         </td>
                     </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="sideright-1">
+            <h2>Build Guide</h2>
+            <h3>Recommended Gear</h3>
+            <h3>Recommended Skills</h3>
+            
+            <h2></h2>
 
             <div class="char-title-header"><h2>Work in Progress, more info and reformatting coming soon!</h2></div>
+            
+        </div> <!-- sideright-1 ends for the second time  -->
+
+        <div class="clearfix"></div> 
         </main><!-- main ends -->
     </div> <!-- main wrapper ends -->
-
 
         <footer>
             Copyright &copy; 2020 Nzae   
