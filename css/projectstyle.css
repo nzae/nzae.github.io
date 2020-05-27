@@ -166,7 +166,7 @@ Right now it makes a transparent mask on the video, so text can stand out on the
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 1; /* Notice this z-index is 1 as compared to z-index -1 of actual banner image video */
 }
-
+/* update pls */
 /* Button Formatting for all buttons on page */
 
 
