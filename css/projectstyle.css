@@ -342,8 +342,8 @@ table p{
 
 /* Image Size within Tier List Table - Must do since we added tooltips */
 div.tooltip img{
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
 }
 
 /* Wrappers for text above and below Tier List table */
