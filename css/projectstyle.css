@@ -118,8 +118,17 @@ nav ul li a:hover{
 
 /* This transform property lets us focus on a specific part of the video for the banner, in tandem with object cover property */
 .banner video{
-    transform: translate(0%, -5%);        
+    transform: translate(0%, 0%);        
     object-fit: cover;
+    
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+    position: relative;
+    
+    bottom: 0;
+    right: 0;
 }
 
 /* video background */
