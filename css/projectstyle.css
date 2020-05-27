@@ -451,5 +451,12 @@ div.tooltip img{
 
 
 
+/* Guides Page specific */
 
+.ether-margin-control{
+    padding-top: 80px;
+}
 
+main video{
+    display: block;
+}
