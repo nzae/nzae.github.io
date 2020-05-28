@@ -406,7 +406,7 @@ div.tooltip img{
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-/* Tooltip for "Tier 0,1,2,etc..." description */
+/* Tooltip for "Tier 0,1,2,etc..." description dd*/
 .tooltip-x .tooltiptext-x {
     visibility: hidden;
     width: auto;
