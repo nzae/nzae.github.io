@@ -12,6 +12,11 @@
     *{
         box-sizing: border-box;
     }
+
+    main{
+        zoom: 80%;
+        width: 50%;
+    }
     body {
     margin: 0;
     padding: 0;
@@ -50,11 +55,15 @@
     }
 
     .c-image-portrait img{
+        
+        border: 1px solid #ddd;
+        border-radius: 4px;
+
         display: block;
-        margin-top: 40px;
+        margin-top: 62px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .background-bar{
@@ -91,6 +100,13 @@ table tr th img{
     max-height: 70%;
     max-width: 70%;
 }
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
 </style>
 <body>
         <header>
@@ -125,18 +141,18 @@ table tr th img{
     <!-- <div class="main-wrapper"> -->
 
         <main>
-            
+        <hr>    
             
                 <div class="char-title-header">
                 <h1>Lily (Descent of Heroes)</h1>
                 <h2>Evaluation and Build Guide</h2>
+        <hr>
                 </div>
                 <div class="sideleft-1">
                 <div class="c-image-portrait">
                     <img src="/images/CharacterProfileL/Lily.png" alt="">
                 </div>
             </div> <!-- sideright ends -->
-
 
             <div class="sideright-1">
                 <table class="lily-summary">
@@ -188,9 +204,8 @@ table tr th img{
             <div class="clearfix"></div>
 
 
-
-
             <div class="sideright-1">
+        <hr>
             <h2>Build Guide</h2>
             <h3>Role: Light Mage</h3>
             <p>
@@ -218,37 +233,71 @@ table tr th img{
                 </tr>
                 <tr>
                     <th>
-                        <img src="/images/EquipImage/Maja Wand.jpg" alt="">
+                        <div class="tooltip"><img src="/images/EquipImage/Maja Wand.jpg" alt=""><span class="tooltiptext">Maja Wand</span></div>
                     </th>
                     <th>
-                        <img src="/images/EquipImage/Sol Finne.jpg" alt="">
+                        <div class="tooltip"><img src="/images/EquipImage/Sol Finne.jpg" alt=""><span class="tooltiptext">Sol Finne</span></div>
                     </th>
                     <th>
-                        <img src="/images/EquipImage/RadmoonStone.jpg" alt="">
+                        <div class="tooltip"><img src="/images/EquipImage/RadmoonStone.jpg" alt=""><span class="tooltiptext">Radmoon Stone</span></div>
                         
                     </th>
                     <th>
-                        <img src="/images/EquipImage/CultistPendant.jpg" alt="">
+                        <div class="tooltip"><img src="/images/EquipImage/CultistPendant.jpg" alt=""><span class="tooltiptext">Cultist Pendant</span></div>
                     </th>
                 </tr>
             </table>
             <div class="clearfix"></div>
         </div> <!-- gear table div end -->
 
+
+
+        <style>
+            .tooltip img{
+                max-width: 64px;
+                max-height: 64px;
+            }
+        </style>
+
+
+
+
         <h4>Recommended Skills</h4>
+        <div class="gear-table-div">
+            <table align="left" class="gear-table">
+            <tr>
+                <th colspan="3">
+                    Needed Skills:
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="tooltip"><img src="/images/SkillImage/Light High Boost.png" alt=""><span class="tooltiptext">Light High Boost</span></div>
+                    <div class="tooltip"><img src="/images/SkillImage/Light Boost.png" alt=""><span class="tooltiptext">Light Boost</span></div>
+                    <div class="tooltip"><img src="/images/SkillImage/Magic Aura.png" alt=""><span class="tooltiptext">Magic Aura</span></div>
+                    <div class="tooltip"><img src="/images/SkillImage/Moonlight.jpg" alt=""><span class="tooltiptext">Moonlight</span></div>
+                    <div class="tooltip"><img src="/images/SkillImage/Pose of Honor.jpg" alt=""><span class="tooltiptext">Pose of Honor</span></div>
+                    <div class="tooltip"><img src="/images/SkillImage/Shining Through the Dark.png" alt=""><span class="tooltiptext">Shining Through the Dark</span></div>
+                </td>
+            </tr>
+            </table>
+            </div>
         
-        </div> <!-- sideright-1 ends for the second time  -->
+            </div> <!-- sideright-1 ends for the second time  -->
 
-        <div class="clearfix"></div> 
+            <div class="clearfix"></div> 
+        <hr>
 
-
-
+<div class="sideright-2">
         <div class="video-of-hero">
             <h2>Lily in Action:</h2>
         </div>
     
         <div class="char-title-header"><h2>Work in Progress, more info and reformatting coming soon!</h2></div>
         </main><!-- main ends -->
+    </div> <!-- sideleft ends -->
+    <div class="clearfix"></div>
+
     </div> <!-- main wrapper ends -->
 
         <footer>
