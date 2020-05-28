@@ -121,6 +121,7 @@ nav ul li a:hover{
     transform: translate(0%, 0%);        
     object-fit: cover;
     
+
     height: 100vh;
     width: 100vw;
 
@@ -406,7 +407,7 @@ div.tooltip img{
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-/* Tooltip for "Tier 0,1,2,etc..." description dd*/
+/* Tooltip for "Tier 0,1,2,etc..." description */
 .tooltip-x .tooltiptext-x {
     visibility: hidden;
     width: auto;
