@@ -495,7 +495,10 @@ div.tooltip img{
     font-weight: bolder;
 }
 
-
+.update{
+    font-weight: bold;
+    color: red;
+}
 
 /* Guides Page specific */
 
