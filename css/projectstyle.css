@@ -378,6 +378,12 @@ div.tooltip img{
     box-sizing: initial;
 }
 
+.tooltip-x{
+    position: relative;
+    display: inline;
+    box-sizing: initial;
+}
+
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -400,11 +406,35 @@ div.tooltip img{
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
+/* Tooltip for "Tier 0,1,2,etc..." description */
+.tooltip-x .tooltiptext-x {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    text-align: center;
+    width: 480px;
+    bottom: 100%;
+    left: 50%;
+    margin-top: 5px; /* Offsets tooltip for arrow */
+    margin-left: -240px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
+.tooltip-x:hover .tooltiptext-x{
+    visibility: visible;
+}
 
 /* Creates the arrow on tooltip */
 
@@ -419,6 +449,16 @@ div.tooltip img{
     border-color: black transparent transparent transparent;
 }
 
+.tooltip-x .tooltiptext-x::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
 /* Tier List page Specific */
 
 .tierlist-ul{
