@@ -15,12 +15,12 @@
     line-height: 1.5;
     font-size: 15px;
 }
-
 .sideright img{
     max-height: 50%;
     max-width: 50%;
 }
 table{
+    margin: auto;
     zoom: 80%;
 }
 table p{
@@ -72,9 +72,11 @@ footer{
 <main>
 <div id="tier-wrapper1">
 <div class="General-Hero-Desc">
+    <hr>
     <h2>
         General Hero Tier List
     </h2>
+    <hr>
     <div class="sideleft12">
 
     <h3>How are heroes ranked?</h3>
@@ -95,16 +97,31 @@ footer{
     </p>
     
     </div><!-- end sideright -->
+    <hr>
 </div> <!-- General Hero div ends -->
 
 <div class="clearfix"></div>
 </div> <!-- End of wrapper -->
 
-
+<style>
+    .tablediv{
+        position: relative;
+        top: -85px;
+        zoom: 80%;
+    }
+    .tablediv .tooltiptext{
+        font-size: 40px;
+    }
+    .tablediv .tooltiptext-x{
+        font-size: 20px;
+    }
+    .tablediv table h4{
+        font-size: 30px;
+    }
+</style>
 
 <div class="tablediv">
     <table>
-        
         <!-- tr>th*7 -->
         <tr>
             <td>
@@ -227,8 +244,12 @@ footer{
             </td>
         </tr>
     </table>
+    <hr>
 </div> <!-- table div ends -->
-<div id="tier-wrapper2">
+
+
+
+<!-- <div id="tier-wrapper2">
 <div class="General-Hero-Descs">
     <h2>Details of Tier Criteria</h2>
     <ul class="tierlist-ul">
@@ -238,10 +259,13 @@ footer{
         <li><span class="tierlabel">Tier 3</span>: Units that require considerable investment to perform well in their roles, but are still usable to clear endgame content. They have less redeemable features and are harder to build than Tier 2 units</li>
         <li><span class="tierlabel">Tier 4</span>: Units that are simply disadvantaged from their base kit and SC saves, and usually have trouble performing even with heavy investment. </li>
     </ul>
-    </div> <!-- Tier Criteria div ends -->
+</div>  -->
     
     </main>
+
 </div><!-- wrapper ends -->
+
+
         <!-- clearfix -->
         <div class="clearfix"></div>
 
