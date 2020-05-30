@@ -518,56 +518,82 @@ main video{
     padding: 525px 25px;
 }
 
+
+
+/* Clearing all floats for mobile devices */
 .sideright{
     width: 100%;
     float: none;
     clear: both;
 }
-
-.sideleft{
-    width: 100%;
-        float: none;
-        clear: both;
-}
-
-.sideleft-1{
+.sideright1{
     width: 100%;
     float: none;
     clear: both;
 }
-
 .sideright-1{
     width: 100%;
     float: none;
     clear: both;
 }
+.sideleft{
+    width: 100%;
+    float: none;
+    clear: both;
 }
+.sideleft-1{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+.sideleft1{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+
+}
+
+
+
 @media only all and (max-width: 768px){  
     .banner-content{
         width: 60%;
         padding: 525px 25px;
     }
 
+
+
+/* Clearing all Floats for Mobile Devices */
 .sideright{
     width: 100%;
     float: none;
     clear: both;
 }
-
+.sideright1{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+.sideright-1{
+    width: 100%;
+    float: none;
+    clear: both;
+}
 .sideleft{
     width: 100%;
-        float: none;
-        clear: both;
+    float: none;
+    clear: both;
 }
 .sideleft-1{
-        width: 100%;
-        float: none;
-        clear: both;
-    }
-    
-.sideright-1{
-        width: 100%;
-        float: none;
-        clear: both;
-    }
+    width: 100%;
+    float: none;
+    clear: both;
+}
+.sideleft1{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+
 }
