@@ -6,13 +6,6 @@
     <title>Nzae | Home</title>
     <link rel="stylesheet" href="css/projectstyle.css">
 
-
-
-    <!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
 </head>
 
 
@@ -32,10 +25,12 @@
     line-height: 1.5;
     }
 
+
+
     main{
         font-size: 15px;
     }
-    
+
     table{ 
         zoom: 80%;
         border: collapse;
@@ -49,7 +44,7 @@
         padding: 5px 0;
         text-align: left;
     }
-    table th{
+    table td{
         padding: 20px 10px;
     }
     table th.background-bar{
@@ -87,7 +82,7 @@
 
         text-align: left;
         background-image: radial-gradient(#ffffff, #d6d6d6);
-        font-size: 20px;
+        font-size: 25px;
     }
     .lily-summary{
         margin-top: 60px;
@@ -109,7 +104,7 @@
     footer{
     font-size: 20px;
 }
-table tr th img{
+table tr td img{
     max-height: 70%;
     max-width: 70%;
 }
@@ -120,6 +115,12 @@ hr {
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
 }
+
+.tooltip img{
+                max-width: 64px;
+                max-height: 64px;
+}
+
 
 @media only screen and (max-width: 1024px){
 
@@ -328,15 +329,36 @@ hr {
                 <h3>Physalis</h3>
                 <h3></h3>
             </div>
+
+
+
             <div class="sideright-1">
             <h2>Build Guide</h2>
 
+    <style>
+        button.collapsible{
+            border-radius: 5px;
+            padding: 0.5em;
+            border: 1px solid #d6d6d6;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            background-image: radial-gradient(#ffffff, #d6d6d6);
+            opacity: 1.0;
+        }
+        
+    </style>
+
+            <button type="button" class="collapsible">Light Mage </button> <!-- Begin collapsible -->
+            <div class="content"> 
+                
             <h3>Role: Light Mage</h3>
+            <h4>Key points</h4>
             <p>
                 <ul>
-                    <li>Focus: High INT to cast spells for magical dps.</li>
-                    <li>Passives and gear which increase light and dark attribute damage to buff her spells.
+                    <li>Focus: High INT to cast spells to maximize magical dps.</li>
                     <li>There are more light boosts available than dark, so prioritize light spell damage.</li>
+                    <li>Passives and gear which increase light and dark attribute damage to buff her spells.</li>
                     <li>Keep Abyss Gate ready as a powerful secondary to light resistance enemies.</li>
                 </ul>
             </p>
@@ -356,44 +378,34 @@ hr {
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         <div class="tooltip"><img src="/images/EquipImage/Maja Wand.jpg" alt=""><span class="tooltiptext">Maja Wand</span></div>
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         <div class="tooltip"><img src="/images/EquipImage/Sol Finne.jpg" alt=""><span class="tooltiptext">Sol Finne</span></div>
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         <div class="tooltip"><img src="/images/EquipImage/RadmoonStone.jpg" alt=""><span class="tooltiptext">Radmoon Stone</span></div>
                         
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         <div class="tooltip"><img src="/images/EquipImage/CultistPendant.jpg" alt=""><span class="tooltiptext">Cultist Pendant</span></div>
-                    </th>
+                    </td>
                 </tr>
             </table>
             <div class="clearfix"></div>
         </div> <!-- gear table div end -->
 
-
-
-        <style>
-            .tooltip img{
-                max-width: 64px;
-                max-height: 64px;
-            }
-        </style>
-
-
-
-
         <h4>Recommended Skills</h4>
         <div class="gear-table-div">
             <table align="left" class="gear-table">
+        
             <tr>
                 <th colspan="3">
                     Needed Skills:
                 </th>
             </tr>
+
             <tr>
                 <td>
                     <div class="tooltip"><img src="/images/SkillImage/Light High Boost.png" alt=""><span class="tooltiptext">Light High Boost</span></div>
@@ -409,12 +421,28 @@ hr {
                     <div class="tooltip"><img src="/images/SkillImage/Magic Up.jpg" alt=""><span class="tooltiptext">Magic up</span></div>
                 </td>
             </tr>
-            </table>
-            </div>
         
-            </div> <!-- sideright-1 ends for the second time  -->
+    </table>
+        <div class="clearfix"></div>
+        <h4>Recommended Ark</h4>
 
-            <div class="clearfix"></div> 
+
+        </div> <!-- gear table div ends -->
+
+    
+        </div>  <!-- End of Collapsible content for Lily Light Mage Build -->
+
+<hr>
+        <button class="collapsible">
+            Stun mage (PvP)
+        </button>
+        <div class="content">
+            <p>Placeholder</p>
+        </div>
+
+            </div> <!-- sideright-1 ends for Builds column  -->
+
+            <div class="clearfix"></div>  
         <hr>
 
         <style>
@@ -452,5 +480,7 @@ hr {
                 *Last Cloudia is a trademark of AIDIS and 2018-2020 &copy; AIDIS, Inc.
             </p>  
         </footer><!-- footer -->
+
+        <script src="/js/collapse.js"></script>
 </body>
 </html>
