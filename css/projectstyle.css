@@ -514,6 +514,7 @@ main video{
 @media only screen and (max-width: 1024px){
 
 .banner-content{
+    display: none;
     width: 60%;
     padding: 525px 25px;
 }
@@ -558,6 +559,7 @@ main video{
 
 @media only all and (max-width: 768px){  
     .banner-content{
+        display: none;
         width: 60%;
         padding: 525px 25px;
     }
