@@ -114,7 +114,7 @@ nav ul li a:hover{
 .banner-content {
     color: #fff;
     width: 60%;
-    padding: 25% 150px;
+    padding: 560px 25px;
 }
 
 .banner-content h1:hover{
@@ -511,8 +511,40 @@ main video{
 }
 
 
-/* @media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px){
 
+.banner-content{
+    width: 60%;
+    padding: 525px 25px;
+}
+
+.sideleft-1{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+
+.sideright-1{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+}
+@media only all and (max-width: 768px){  
+    .banner-content{
+        width: 60%;
+        padding: 525px 25px;
+    }
+
+.sideleft-1{
+        width: 100%;
+        float: none;
+        clear: both;
+    }
     
-
-    @media only all and (max-width: 768px){  
+.sideright-1{
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+}
