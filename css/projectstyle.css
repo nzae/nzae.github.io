@@ -47,12 +47,13 @@ header {
     
 }
 
-header{
-/*     zoom: 60%;
+/* header{
+    zoom: 60%;
     background-color: rgb(43, 94, 128);
-    background-image: radial-gradient(rgb(111, 155, 184),rgb(43, 94, 128));
-    border-bottom: 6px solid gainsboro; */
+    border-bottom: 6px solid gainsboro;
 }
+*/
+
 .logo h1 {    
     padding: 5px 25px;
     font-size: 40px;
@@ -359,8 +360,8 @@ table p{
 
 /* Image Size within Tier List Table - Must do since we added tooltips */
 div.tooltip img{
-    height: 100px;
-    width: 100px;
+    height: 10em;
+    width: 10em;
 }
 
 /* Wrappers for text above and below Tier List table */
