@@ -49,11 +49,9 @@ header {
     position: absolute;
     width: 100%;
     text-align: center;
-
-
     background-color: #252525;
     border-bottom: 5px solid gainsboro;
-    zoom: 60%;
+    zoom: 59%;
 }
 
 /* Site Logo  */
