@@ -497,11 +497,27 @@ width: 80%;
                 text-align: left;
                 
             }
+            .sideright-2 ul li{
+                list-style-type: none;
+            }
+            .sideleft-1 ul li:before {
+                content: "+"; /* Insert content that looks like bullets */
+                padding-top: 15px;
+                font-size: 20px;
+                color: blue; /* Or a color you prefer */
+            }
+            .sideright-1 ul li:before {
+                content: "−"; /* Insert content that looks like bullets */
+                padding-top: 15px;
+                font-size: 20px;
+                color: red; /* Or a color you prefer */
+            }
         </style>
 
 <div class="sideright-2">
     <button type="button" class="collapsible">Strengths and Weaknesses</button> <!-- Begin collapsible -->
     <div class="content">
+        <div class="sideleft-1">
         <h4>Strengths</h4>
         <p>
         <ul>
@@ -514,6 +530,8 @@ width: 80%;
             <li>Warp trait is useful for survival in Tower.</li>
             
         </ul>
+    </div> <!-- side right ends -->
+    <div class="sideright-1">
         <h4>Weaknesses</h4>
         <ul>
             <li>Requires paid equips to reach max potential, though he still performs very well without.</li>
@@ -521,6 +539,9 @@ width: 80%;
             <li>His innate ailment weakness to Stun is not great.</li>
         </ul>
         </p>
+    </div> <!-- side left ends -->
+
+    <div class="clearfix"></div>
     </div>
     <hr> 
         <div class="video-of-hero">
