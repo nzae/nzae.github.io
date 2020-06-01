@@ -32,11 +32,28 @@ main{
 
 /* header */
 
+/* header as a block style
+change .logo h1 font weight to 300
+nav and transition fonts weight to 300 */
+
+/* header{
+position: absolute;
+width: 100%;
+text-align: center;
+background-color: #05173dde;
+border-bottom: 5px solid gainsboro;
+zoom: 80%;
+} */
+
 header {
     position: absolute;
     width: 100%;
     text-align: center;
-    
+
+
+    background-color: #252525;
+    border-bottom: 2px solid gainsboro;
+    zoom: 60%;
 }
 
 /* Site Logo  */
@@ -57,7 +74,7 @@ header {
 .logo h1 {    
     padding: 5px 25px;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 300;
     color: #fff;
 }
 
@@ -82,7 +99,7 @@ nav ul li {
 
 nav ul li a {
     
-    font-weight: bold;
+    font-weight: 300;
 
     padding: 15px 30px;
     font-size: 30px;
@@ -98,7 +115,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    font-weight: bold;
+    font-weight: 300;
 
     padding: 15px 30px;
     font-size: 30px;
@@ -115,16 +132,16 @@ nav ul li a:hover{
 
 .banner {
     width: 100%;
-    height: 100vh;
-    /* background-image: url(/media/dl_header1.png); */
+    height: 75vh;
+    /* background-image: url(/media/dl_header2.png); */
     background-size: cover;
     border-bottom: 5px solid gainsboro;
 }
 
 .banner-content {
+    display: none;
     color: #fff;
-    padding: 25em 1em;
-
+    padding: 2em 1em;
 }
 
 .banner-content h1:hover{
@@ -134,12 +151,12 @@ nav ul li a:hover{
 }
 
 /* This transform property lets us focus on a specific part of the video for the banner, in tandem with object cover property */
-.banner video{
-    transform: translate(0%, 0%);        
+.banner img{
+    transform: translate(-1%, 10%);        
     object-fit: cover;
     
 
-    height: 100vh;
+    height: 75vh;
     width: 100vw;
 
     overflow: hidden;
@@ -149,10 +166,14 @@ nav ul li a:hover{
     right: 0;
 }
 
+.banner-video img{
+    background-size: cover;
+    
+}
 /* video background */
 .banner-video{
     width: 100%;
-    height: 100%;
+    height: 75vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -307,7 +328,8 @@ iframe{
 footer {
     border-top: 5px solid gainsboro;
     padding: 40px;
-    background-color: grey;
+    background-color:#252525;
+    /* Last Cloudia color 05173dde */
     text-align: center;
     color: #fff;
 }
