@@ -151,7 +151,7 @@ nav ul li a:hover{
 
 /* This transform property lets us focus on a specific part of the video for the banner, in tandem with object cover property */
 .banner img{
-    transform: translate(-1%, 10%);        
+    transform: translate(0%, 10%);        
     object-fit: cover;
     
 
@@ -607,6 +607,11 @@ main video{
 }
 
 
+.banner-video img{
+    transform: translate(0%,+15%);
+    object-fit: cover;
+    
+}
 
 /* Clearing all floats for mobile devices */
 .sideright{
