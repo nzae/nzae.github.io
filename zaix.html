@@ -490,23 +490,26 @@ width: 80%;
 
         <style>
             .sideright-2{
-            
+                
                 line-height: 2.0;
             }
             .sideright-2 h2{
                 text-align: left;
-                
+            
+            }
+            #strength-weakness h4{
+            font-size: 20px;
             }
             .sideright-2 ul li{
                 list-style-type: none;
             }
-            .sideleft-1 ul li:before {
+            #strength ul li:before {
                 content: "+"; /* Insert content that looks like bullets */
                 padding-top: 15px;
                 font-size: 20px;
                 color: blue; /* Or a color you prefer */
             }
-            .sideright-1 ul li:before {
+            #weakness ul li:before {
                 content: "−"; /* Insert content that looks like bullets */
                 padding-top: 15px;
                 font-size: 20px;
@@ -516,8 +519,8 @@ width: 80%;
 
 <div class="sideright-2">
     <button type="button" class="collapsible">Strengths and Weaknesses</button> <!-- Begin collapsible -->
-    <div class="content">
-        <div class="sideleft-1">
+    <div id="strength-weakness" class="content">
+        <div id="strength" class="sideleft-1">
         <h4>Strengths</h4>
         <p>
         <ul>
@@ -531,7 +534,7 @@ width: 80%;
             
         </ul>
     </div> <!-- side right ends -->
-    <div class="sideright-1">
+    <div id="weakness" class="sideright-1">
         <h4>Weaknesses</h4>
         <ul>
             <li>Requires paid equips to reach max potential, though he still performs very well without.</li>
