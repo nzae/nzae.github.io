@@ -337,6 +337,37 @@ width: 80%;
 
             <div class="clearfix"></div>
 
+<button id="str-padding" type="button" class="collapsible">Strengths and Weaknesses</button> <!-- Begin collapsible -->
+    <div id="strength-weakness" class="content">
+        <div id="strength" class="sideleft-1">
+        <h4>Strengths</h4>
+        <p>
+        <ul>
+            <li>Extremely high base STR</li>
+            <li>Perhaps the strongest PDPS and Breaker packed into one unit.</li>
+            <li>Very high high counts</li>
+            <li>PvP: His faint values are high enough to instant faint many units, forcing the meta to change to faint resist gear.</li>
+            <li>Not tied to one element. Damage is tied to Backstab instead, a benefit in Tower.</li> 
+            <li>Warp trait is useful for survival in Tower.</li>
+            
+        </ul>
+    </div> <!-- side right ends -->
+    <div id="weakness" class="sideright-1">
+        <h4>Weaknesses</h4>
+        <ul>
+            <li>Requires paid equips to reach max potential, though he still performs very well without.</li>
+            <li>Very low base MND makes him susceptible to melting from magic or INT scaling damage.</li>
+            <li>Innate weakness to Illness is not great for Proud Forcing.</li>
+        </ul>
+        </p>
+    </div> <!-- side left ends -->
+
+    <div class="clearfix"></div>
+    </div>  <!-- Strength and Weakness Div Ends -->
+
+
+
+            <!-- old setup -->
             <hr>
 
             <div class="sideleft-1">
@@ -371,6 +402,35 @@ width: 80%;
             width: 200%;
             height: 200%;
         }
+
+            #strength-weakness h4{
+            font-size: 20px;
+            }
+            #strength-weakness ul{
+                padding: 0px 0px;
+            }
+            #strength-weakness ul li{
+                list-style-type: none;
+                
+            }
+            #strength ul li:before {
+                content: "+"; /* Insert content that looks like bullets */
+                padding-top: 15px;
+                font-size: 20px;
+                color: rgb(0, 165, 0); 
+            }
+            #weakness ul li:before {
+                content: "−"; /* Insert content that looks like bullets */
+                padding-top: 15px;
+                font-size: 20px;
+                color: red; 
+            }
+
+            #str-padding{
+                margin-top: 20px;
+                list-style-type: none;
+            }
+
     </style>
 
             <button type="button" class="collapsible">Breaker Physical DPS</button> <!-- Begin collapsible -->
@@ -488,78 +548,24 @@ width: 80%;
             <div class="clearfix"></div>  
         <hr>
 
-        <style>
-            .sideright-2{
-                
-                line-height: 2.0;
-            }
-            .sideright-2 h2{
-                text-align: left;
-            
-            }
-            #strength-weakness h4{
-            font-size: 20px;
-            }
-            .sideright-2 ul li{
-                list-style-type: none;
-            }
-            #strength ul li:before {
-                content: "+"; /* Insert content that looks like bullets */
-                padding-top: 15px;
-                font-size: 20px;
-                color: blue; /* Or a color you prefer */
-            }
-            #weakness ul li:before {
-                content: "−"; /* Insert content that looks like bullets */
-                padding-top: 15px;
-                font-size: 20px;
-                color: red; /* Or a color you prefer */
-            }
-        </style>
+    <style>
 
-<div class="sideright-2">
-    <button type="button" class="collapsible">Strengths and Weaknesses</button> <!-- Begin collapsible -->
-    <div id="strength-weakness" class="content">
-        <div id="strength" class="sideleft-1">
-        <h4>Strengths</h4>
-        <p>
-        <ul>
-            <li>Extremely high base STR</li>
-            <li>Perhaps both the strongest PDPS and Breaker packed into one unit.</li>
-            <li>Very high high counts, means more potential for additional 9999 hits.</li>
-            <li>PvP: His faint values are high enough to instant faint many units, forcing the meta to change to faint resist gear.</li>
-            <li>Not tied to one element, and even use Trishula if needed.</li>
-            <li>Having his damage boost tied to Backstab and not elementally is a huge benefit in Tower.</li>
-            <li>Warp trait is useful for survival in Tower.</li>
-            
-        </ul>
-    </div> <!-- side right ends -->
-    <div id="weakness" class="sideright-1">
-        <h4>Weaknesses</h4>
-        <ul>
-            <li>Requires paid equips to reach max potential, though he still performs very well without.</li>
-            <li>Very low base MND makes him susceptible to melting from magic or INT scaling damage.</li>
-            <li>His innate ailment weakness to Illness is not great for Proud Forcing.</li>
-        </ul>
-        </p>
-    </div> <!-- side left ends -->
+    </style>
+<div class="sideright-2"> 
 
-    <div class="clearfix"></div>
-    </div>
-    <hr> 
-        <div class="video-of-hero">
-            
+        <div>
             <h2>Zaix in Action:</h2>
         </div>
     
-        <div class="char-title-header"><h2>Work in Progress, more info and reformatting coming soon!</h2></div>
-        </main><!-- main ends -->
-    </div> <!-- sideleft ends -->
+        <div><h2>Work in Progress, more info and reformatting coming soon!</h2></div>
 
 
-    <div class="clearfix"></div>
+</div> <!-- sideright-2 ends -->
 
-    </div> <!-- main wrapper ends -->
+</main><!-- main ends -->
+
+
+<div class="clearfix"></div>
 
         <footer>
             Copyright &copy; 2020 Nzae   
