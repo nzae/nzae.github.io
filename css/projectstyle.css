@@ -570,6 +570,9 @@ div.tooltip img{
     font-size: 0.75em;
 }
 
+
+
+
 /* Only for specific bolds, should probably reformat this */
 .soon{
     font-weight: bold;
@@ -585,7 +588,10 @@ div.tooltip img{
 }
 
 
-/* Guides Page specific */
+
+
+
+/* Guides Page specific + TABS */
 
 .ether-margin-control{
     padding-top: 75px;
@@ -594,6 +600,64 @@ div.tooltip img{
 main video{
     display: block;
 }
+
+
+div.tab button{
+    margin: 0px, 0px;
+    padding: ;
+}
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+  /* float: left; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+  /* border: 1px solid #ccc; */
+    border-top: none;
+}
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+
+
+
+
+
 
 
 /* Collapsible Buttons - Used in all pages */
@@ -650,7 +714,7 @@ main video{
 
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1022px){
 
 .banner-content{
     display: none;
@@ -658,6 +722,35 @@ main video{
     padding: 525px 25px;
 }
 
+
+.sideright1 iframe{
+    width: auto;
+    height: auto;
+    padding: 0px 0px;
+}
+
+
+
+nav ul li a{
+    font-size: 20px;
+
+}
+
+nav ul{
+    width: 100%;
+    padding-left: 0px;
+}
+
+
+.tab{
+    text-align: center;
+    zoom: 80%;
+}
+
+.tab button{
+    float: left;
+    min-width: 50%;
+}
 
 .banner-video img{
     transform: translate(0%,+15%);
@@ -708,7 +801,27 @@ main video{
         padding: 525px 25px;
     }
 
+nav ul li a{
+    font-size: 25px;
+    
+}
+    
+nav ul{
+    width: 100%;
+    padding-left: 0px;
+}
+    
 
+
+iframe{
+    width: auto;
+    height: auto;
+}
+
+.tab{
+    text-align: center;
+    zoom: 80%;
+}
 
 /* Clearing all Floats for Mobile Devices */
 .sideright{
