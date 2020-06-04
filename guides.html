@@ -14,6 +14,62 @@
         margin: auto;
         
     }
+
+    
+</style>
+
+<style>
+    button.collapsible{
+        border-radius: 2px;
+        padding: 0.0001em;
+        border: 1px solid #d6d6d6;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+
+        padding-left: 1em;
+        opacity: 1.0;
+    }
+
+    div.tooltip img{
+        padding: 2px 2px;
+    
+        border: 1px solid #d6d6d6;
+        height: 975px;
+        width: 612px;
+        zoom: 35%
+    }
+
+
+    div.margincontrol{
+        margin-bottom: 75px;
+    }
+
+    .tooltiptext{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    text-align: center;
+    width: 200px;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 5px; /* Offsets tooltip for arrow */
+    margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
 </style>
 <body>
         <header>
@@ -59,13 +115,47 @@
             </div>
 
 
-            <div id="Beginner" class="tabcontent">
-                <h2>Beginner Tips</h2>
-                
+        <div id="Beginner" class="tabcontent">
+                <h1>Beginner Tips</h1>
+                <div class="sideleft">
                 <p>A few things to note:</p>
-                
-            </div>
-            
+                <hr>
+                <h2>Arks</h2>
+<hr>
+                    <p>
+                    <ul>
+                        <li>Arks are used to teach <b> powerful skills to your heroes</b> which they don't already have in their skill tree.</li>
+                        <li>Think of Arks not as permanent equips for Heroes, but instead as <b>skill repositories</b> for heroes.</li>
+    
+                        <li>Arks should not be leveled any higher than necessary when you start the game!</li>
+                        <li>A good rule of thumb is to <b>never level any SSR ark above 4</b>, if you are unsure.</li>
+                        
+                    </ul>
+                    <button type="button" class="collapsible"><h4>Why shouldn't I always level my Arks?</h4></button>
+
+                    <div class="content">
+                    
+                    <ul>
+                        <li>Each time you level your ark, the amount of souls it uses increase, and there isn't any way to lower its level.</li>
+                        <li>Once you  reach 100% Ether Gauge on an ark, it gives a special reward item called an AER.</li>
+                        <li>Leveling arks early means you are increasing the amount of Blue/Red Souls that it will take to grind your ark to 100% Ether</li>
+                        <li>This can result in costing you thousands of additional souls to obtain it's AER.</li>     
+                        <li>Therefore, its recommended that you <b class="update">consider the ark ether reward first</b> before leveling it indiscriminately.</li>
+                    </ul>
+                    </p>
+                    </div> <!-- content of collapsible ends -->
+            </div> <!-- sideleft ends -->
+    <div class="sideright">
+        <div class="margincontrol"></div>
+        <div class="tooltip"><img src="/images/GuidesPage/Ark-Skill-Page.jpg" alt=""><span class="tooltiptext">A display of the Skill Page of an Ark.</span></div>
+        <div class="tooltip"><img src="/images/GuidesPage/ARK-AER.jpg" alt=""><span class="tooltiptext">An example of an AER an ark can provide by reaching 100% Ether Gauge.</span></div>
+    </div> <!-- sideright ends -->
+
+        </div> <!-- Beginner Guides Div ends -->
+
+<div class="clearfix"></div>
+
+
             <div id="Ether-Grinding" class="tabcontent">
                 <div class="sideleft1">
                 
@@ -123,6 +213,7 @@
             </p>  
         </footer><!-- footer -->
     <script src="js/tabs.js"></script>
+    <script src="/js/collapse.js"></script>
     <script>
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
