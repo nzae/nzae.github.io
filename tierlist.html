@@ -122,7 +122,7 @@ footer{
 <style>
     .tablediv{
         position: relative;
-        top: -85px;
+        top: -100px;
         zoom: 80%;
     }
     .tablediv .tooltiptext{
@@ -264,7 +264,37 @@ footer{
         </tr>
     </table>
     <hr>
+    <div class="change-zoom">
+        <button id="Change-Log" class="collapsible">Change Log</button>
+        <div id="Change-Log-Content" class="content">
+            <p>6/4/2020 Update</p>
+            <ol>
+                <li>Dilmordo added to Tier 0.</li>
+                <li>Tynkili added to Tier 1.</li>
+            </ol>
+        </div>
+        </div> <!-- change-zoom -->
 </div> <!-- table div ends -->
+
+<style>
+    .change-zoom{
+
+       /*  float: right; */
+        /* width: 30%; */
+        margin: auto auto;
+        display: block;
+
+    }
+    #Change-Log{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #Change-Log-Content{
+        border: 0.5px solid #dedede;
+        font-size: 20px;
+    
+    }
+</style>
 
 
 
@@ -279,7 +309,7 @@ footer{
         <li><span class="tierlabel">Tier 4</span>: Units that are simply disadvantaged from their base kit and SC saves, and usually have trouble performing even with heavy investment. </li>
     </ul>
 </div>  -->
-    
+
     </main>
 
 </div><!-- wrapper ends -->
@@ -300,4 +330,5 @@ footer{
             </p>  
         </footer><!-- footer -->
 </body> <!-- Body ends -->
+<script src="/js/collapse.js"></script>
 </html>
